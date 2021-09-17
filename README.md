@@ -2,9 +2,7 @@
 ## Accelerate your modeling, reporting, and development
 #### 89% less RAM | 98% faster disk | 72% less storage | 48–95% faster enhancements| 10x+ faster development
 
-This repo is a companion to a series of Medium.com articles I published in September 2021. The series' introduction can be found here:
-https://medium.com/@scollay/caffeinated-pandas-accelerate-your-modeling-reporting-and-development-e9d41476de3b
-
+This repo is a companion to a series of Medium.com articles I published in September 2021. The series' introduction can be found here: [Caffeinated Pandas: accelerate your modeling, reporting, and development](https://medium.com/@scollay/caffeinated-pandas-accelerate-your-modeling-reporting-and-development-e9d41476de3b)
 
 ## Background
 I've long been interested in financial markets, trading, and investing. 
@@ -20,7 +18,7 @@ I discovered that there were four productivity killers that were really holding 
 3. **Computer's full processing power not being used.** Solution: [Multiprocessing Pandas - 48 to 95% faster Dataframe enhancements](https://medium.com/@scollay/multiprocessing-pandas-48-90-faster-dataframe-enhancements-c65ef29f03b1)
 4. **Taking too long to develop, iterate, and test code.** Solution: [Processing Pandas - 10x+ faster coding and iteration with "rough samples"](https://medium.com/@scollay/processing-pandas-10x-faster-coding-and-iteration-with-rough-samples-78b75b7d5b0b)
 
-After a few articles you may be presented with a Medium.com paywall. A 1-month subscription costs a mere $5.00 and helps to support thousands of writers.
+*Note:* After a few articles you may be presented with a Medium.com paywall. A 1-month subscription costs a mere $5.00 and helps to support thousands of writers.
 
 ## Not just for stocks
 It should be noted that while I'm clearly focused on stock quotes in this series of articles, the principles will certainly work on any columnar, Pandas-based data for all types of models and analysis.
@@ -29,29 +27,25 @@ It should be noted that while I'm clearly focused on stock quotes in this series
 It's taken me a long time with many false starts to get to this point where I can confidently process large swaths of data. Going into this I had a notion that I'd like to write about it. Just knowing that others would be reading it, I've dramatically improved my own code and its performance, sometimes by an order of magnitude as I searched for "better" ways. Also, by sharing, I'm hoping others will provide constructive feedback on what I could have done better!
 
 
-## Library requirements
+## Requirements
 
 ### Python version
 On Mac I intalled with Miniconda: Python 3.9.5
+
 On Linux/Ubuntu server: Python 3.8.2
 
 ### Libraries
-apt install python3-pip
+*apt install python3-pip*
 
-pip install pandas
+*pip install pandas*
 
-pip install psutil
+*pip install psutil*
 
-pip install pyarrow
+*pip install pyarrow*
 
-pip install scipy
+*pip install scipy*
 
-#### tables library
-conda install pytables #for Miniconda installation
-
-OR
-
-pip install tables #for Ubuntu Python
+tables library: *conda install pytables* for Miniconda installation, or *pip install tables* for Ubuntu's Python
 
 ## Feedback
 Please feel free to reach out to me directly at scollay@coldbrew.cc
