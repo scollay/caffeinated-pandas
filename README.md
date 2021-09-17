@@ -15,7 +15,7 @@ I discovered that there were four productivity killers that were really holding 
 
 1. **Running out of memory.** Solution: [Squeezing Pandas - 89% less RAM consumption](https://medium.com/@scollay/squeezing-pandas-89-less-ram-consumption-4d91a0eb9c08)
 2. **Disk reading and writing taking way too long.** Solution: [Storing Pandas - 98% faster disk reads and 72% less space](https://medium.com/@scollay/storing-pandas-98-faster-disk-reads-and-72-less-space-208e2e2be8bb)
-3. **Computer's full processing power not being used.** Solution: [Multiprocessing Pandas - 46 to 95% faster Dataframe enhancements](https://medium.com/@scollay/multiprocessing-pandas-48-90-faster-dataframe-enhancements-c65ef29f03b1)
+3. **Computer's full processing power not being used.** Solution: [Multiprocessing Pandas - 46 to 95% faster Dataframe enhancements](https://medium.com/@scollay/multiprocessing-pandas-46-90-faster-dataframe-enhancements-c65ef29f03b1)
 4. **Taking too long to develop, iterate, and test code.** Solution: [Processing Pandas - 10x+ faster coding and iteration with "rough samples"](https://medium.com/@scollay/processing-pandas-10x-faster-coding-and-iteration-with-rough-samples-78b75b7d5b0b)
 
 *Note:* After a few articles you may be presented with a Medium.com paywall. A 1-month subscription costs a mere $5.00 and helps to support thousands of writers.
