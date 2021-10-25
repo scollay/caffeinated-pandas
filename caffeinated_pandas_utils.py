@@ -295,7 +295,7 @@ def multiproc_dataframe(**kwargs):
             start_split = df_splits[i].iloc[0]['index']
 
             if i == len(df_splits)-1:
-                end_split = 0
+                end_split = None
             else:
                 end_split = df_splits[i+1].iloc[0]['index']
 
