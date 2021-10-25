@@ -295,9 +295,9 @@ def multiproc_dataframe(**kwargs):
             start_split = df_splits[i].iloc[0]['index']
 
             if i == len(df_splits)-1:
-                end_split = -1
+                end_split = 0
             else:
-                end_split = df_splits[i+1].iloc[0]['index']-1
+                end_split = df_splits[i+1].iloc[0]['index']
 
             dfs = df[start_split : end_split].reset_index(drop=True)
             dfs.to_feather(temp_files[i], compression='lz4')
@@ -307,17 +307,11 @@ def multiproc_dataframe(**kwargs):
     gc.collect()
 
 
-#    start = datetime.utcnow()
-
     #----- Initialize
     manager = multiprocessing.Manager()
     processes = []
 
-#    end = datetime.utcnow()
-#    print('manager took:'+str(end-start)[0:11])
-
-
-
+    
     #----- Process splits and concatinate all element in the return_list
     for i in range(procs):
 
@@ -334,13 +328,9 @@ def multiproc_dataframe(**kwargs):
     for fn in temp_files:
         dfs.append(pd.read_feather(fn))
         os.remove(fn)
-#    start = datetime.utcnow()
+
     df = pd.concat(dfs, ignore_index=True)
     df = df.reset_index(drop=True)
-#    end = datetime.utcnow()
-#    print('1 concat files took:'+str(end-start)[0:11])
-
-#    print('------df--------\n', df)
 
     return df
 
